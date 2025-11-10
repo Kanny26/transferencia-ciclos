@@ -7,11 +7,14 @@
 let numeroSecreto = 18;
 let adivinador = false;
 
+// Generar número aleatorio entre 1 y 20
 while(!adivinador){
     let intento = parseInt(prompt("Adivina el número secreto (entre 1 y 20):"));    
 
+    //verificar si el intento es igual, mayor o menor al número secreto
     if (intento === numeroSecreto){
         alert("¡Felicidades! Has adivinado el número secreto.");
+        //detener el ciclo
         adivinador = true;
     }else if (intento < numeroSecreto){
         alert("El número secreto es mayor que " + intento + ". Intenta de nuevo.");

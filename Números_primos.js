@@ -9,12 +9,17 @@ let total = ""
 
 //ciclo para verificar los números primos entre 1 y 50
 for (numero = 1; numero <= 50; numero++){
+    //se verifica si el número es primo
     let numeroprimo = true;
+    //ciclo para verificar si el número tiene divisores
     for (divisor = 2; divisor < numero; divisor++)
+        //si el número es divisible por algún número entre 2 y él mismo, no es primo
         if (numero % divisor === 0){
+            //se cambia el valor de la variable numeroprimo a false
             numeroprimo = false;
             break;
         }
+        //si el número es primo, se agrega a la lista de números primos
     if (numeroprimo) {
         total += numero + " ";
     }

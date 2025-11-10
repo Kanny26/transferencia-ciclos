@@ -11,10 +11,11 @@ let impares = 0;
 for(let i = 1; i <= 10; i++){
     let numero = parseInt(prompt("Ingrese el número " + i + ":"));
     
+    //verificar si el numero es par o impar
     if (numero % 2 === 0){
-        pares++;
+        pares++; //si es par, incrementar el contador de pares
     }else{
-        impares++;
+        impares++; //si es impar, incrementar el contador de impares
     }
 }
 

@@ -6,11 +6,13 @@
 let totalcompra = 0;
 let comprar = "si";
 
+//Bucle para agregar productos
 while(comprar === "si"){
     let nombre = prompt("Ingrese el nombre del producto:");
     let precio = parseFloat(prompt("Ingrese el precio del producto:"));
     let cantidad = parseFloat(prompt("Ingrese la cantidad del producto:"));
 
+    //se calcula el subtotal y se acumula al total de la compra
     let subtotal = precio * cantidad;
     totalcompra += subtotal;
 
@@ -20,6 +22,7 @@ while(comprar === "si"){
 
 }
 
+//Aplicar descuento si el total supera los 100000
 if (totalcompra > 100000){
     let descuento = totalcompra * 0.10;
     totalcompra -= descuento;

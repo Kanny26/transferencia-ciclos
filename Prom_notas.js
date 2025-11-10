@@ -15,8 +15,9 @@ for (let i = 1; i <= 5; i++) {
     //calculo del promedio
     let promedio = (nota1 + nota2 + nota3) / 3;
 
+    //condicional para verificar si aprueba o reprueba
     if (promedio >= 3.0){
-        alert("El estudiante " + i + " ha aprodbado con un promedio de " + promedio.toFixed(2));
+        alert("El estudiante " + i + " ha aprobado con un promedio de " + promedio.toFixed(2));
     }else {
         alert("El estudiante " + i + " ha reprobado con un promedio de " + promedio.toFixed(2));
     }
